@@ -7,7 +7,7 @@ LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DA
 LABEL maintainer="sparklyballs"
 
 # package versions
-ARG UNIFI_VER="5.9.32"
+ARG UNIFI_VER="5.10.5"
 
 # environment settings
 ARG DEBIAN_FRONTEND="noninteractive"
@@ -27,7 +27,7 @@ RUN \
  echo "**** install unifi ****" && \
  curl -o \
  /tmp/unifi.deb -L \
-	"https://dl.ubnt.com/unifi/5.9.32-016da0b7c1/unifi_sysvinit_all.deb" && \
+	"https://dl.ubnt.com/unifi/5.10.5-6ba4d1bfe5/unifi_sysvinit_all.deb" && \
  dpkg -i /tmp/unifi.deb && \
  echo "**** cleanup ****" && \
  apt-get clean && \
