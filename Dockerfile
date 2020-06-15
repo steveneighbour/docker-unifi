@@ -23,7 +23,7 @@ RUN \
 	jsvc \
 	mongodb-org-server \
 	openjdk-8-jre-headless \
-	wget && \
+	wget logrotate && \
  echo "**** install unifi ****" && \
  curl -o \
  /tmp/unifi.deb -L \
