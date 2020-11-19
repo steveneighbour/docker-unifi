@@ -27,7 +27,7 @@ RUN \
  echo "**** install unifi ****" && \
  curl -o \
  /tmp/unifi.deb -L \
-	"https://dl.ui.com/unifi/6.0.20/unifi_sysvinit_all.deb" && \
+	"https://dl.ui.com/unifi/6.0.28/unifi_sysvinit_all.deb" && \
  dpkg -i /tmp/unifi.deb && \
  echo "**** cleanup ****" && \
  apt-get clean && \
